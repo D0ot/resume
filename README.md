@@ -1,5 +1,10 @@
 # Résumé
 
+This is Doot's resume, base on a resume template(see below)
+
+
+# Below is the Original Repo README.
+
 Hit branch [zh_CN](https://github.com/billryan/resume/tree/zh_CN) if you want a Simplified Chinese résumé.
 
 中文用户请前往 [zh_CN](https://github.com/billryan/resume/tree/zh_CN) 分支。
