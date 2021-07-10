@@ -13,49 +13,68 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{耿宝源}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{gugegby@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 185-397-99675} \textperiodcentered\ 
+  \github[d0ot]{https://github/D0ot}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{合肥工业大学}, 宣城, 安徽}{2009 -- 2013}
+\textit{学士}\ 计算机科学与技术专业
 
 \section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
-
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\datedsubsection{\textbf{合肥工业大学RoboCup实验室}}{2019年4月 -- 至今}
+\role{3D仿真开发小组成员}{}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+合肥工业大学RoboCup实验室主要使用C++/Python进行机器人仿真模拟的相关开发。
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item 维护RoboCup 3D仿真开发环境的一键安装脚本。
+  \item 在C++环境使用CMA-ES算法对智能体行为进行优化。
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\datedsubsection{\textbf{GLEC2}}{2021年6月 -- 2021年7月}
+\role{个人项目，计算机体系结构的课程设计}{}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+一个五级流水线的RV32I的CPU核心设计，支持通过Bypass和Stall解决Data Hazard。实现了非特权的几乎全部指令，GCC编译出的机器码可以直接在CPU上运行。
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 经典五级流水线设计
+  \item 完整的RV32I非特权级指令集
+  \item 可配置，通过改变参数可以配置CPU核心的参数。
+  \item 使用SpinalHDL(一个基于Scala的DSL)写成，敏捷开发实践。
 \end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{ZGMSOS}}{2021年6月 -- 至今}
+\role{竞赛项目}{}
+\begin{onehalfspacing}
+一个XV6风格的玩具内核实现，是系统能力培养大赛操作系统内核赛的初赛参赛作品。项目仍在开发中。
+\begin{itemize}
+  \item 支持多进程 / 上下文切换
+  \item 可以加载ELF文件，运行用户程序
+  \item 相比于XV6，有着更小细粒度的内存管理
+  \item 一个只读的FAT32文件系统
+  \item 一个简单的虚拟文件系统
+  \item 支持一些系统调用
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{其他项目}}{}
+\role{个人项目,个人实用工具}{}
+\begin{onehalfspacing}
+下面是我的一些个人小项目。
+\begin{itemize}
+  \item GLEC: 一个单周期的RV32I指令集CPU核心实现
+  \item Robocup3dInstaller: RoboCup3D仿真开发环境安装脚本
+  \item gb\_onenotehelper: 一个增强触控笔上按键功能的AHK脚本，适用于单按键笔Windows设备
+  \item subw2r: 一个命令行V2ray订阅小工具，输入定订阅链接，生成config.json配置文件。
+\end{itemize}
+\end{onehalfspacing}
+
+\begin{onehalfspacing}
+\textbf{上面提到的主要项目都已经Pin到我的Github个人页面了}
 \end{onehalfspacing}
 
 % Reference Test
@@ -65,24 +84,30 @@ xxx后端开发
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ IT 技能}
+\section{\faCogs\ 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
+  \item 编程语言: C/C++, Python > Bash, Java, Rust, Scala
   \item 平台: Linux
-  \item 开发: xxx
+  \item 开发: Linux环境编程，裸机环境编程
+  \item 其他: 对Linux命令行有一定掌握，因为日用系统是Archlinux。熟练使用Vim。
+
 \end{itemize}
 
+
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\datedline{\textit{二等奖}, 2020 中国大学生数学建模大赛本科组}{2020 年11 月}
+\datedline{\textit{一等奖}, 2020 安徽省大数据与人工智能应用竞赛本科组}{2020 年 10月}
+\datedline{\textit{一等奖}, 2020 安徽省机器人大赛，RoboCup仿真3D比赛}{2020 年 10月}
+\datedline{\textit{H奖}, 2020美国大学生数学建模竞赛}{2020年4月}
+\datedline{\textit{一等奖}, 合肥工业大学2018-2019学年奖学金}{2019年9月}
+
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item GitHub: https://github.com/d0ot
+  \item 语言: 英语 - 中等(CET6 - 528, CET4 - 561)
 \end{itemize}
 
 %% Reference
