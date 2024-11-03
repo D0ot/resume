@@ -16,65 +16,25 @@
 \name{耿宝源}
 
 \basicInfo{
-  \email{gugegby@gmail.com} \textperiodcentered\ 
+  \email{gengbaoyuan@gmail.com} \textperiodcentered\ 
   \phone{(+86) 185-397-99675} \textperiodcentered\ 
   \github[d0ot]{https://github/D0ot}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{合肥工业大学}, 宣城, 安徽}{2018年9月 -- 至今}
-计算机科学与技术专业，本科在读
+\datedsubsection{\textbf{合肥工业大学}， 宣城， 安徽}{2018年9月 -- 2022年6月}
+计算机科学与技术专业，本科
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{合肥工业大学RoboCup实验室}}{2019年4月 -- 至今}
-\role{3D仿真开发小组成员}{}
+\section{\faUsers\ 工作经历}
+\datedsubsection{\textbf{深信服科技股份有限公司}， 深圳}{2022年7月 -- 2024年9月}
+\role{后台软件开发工程师}{云技术中台部}
 \begin{onehalfspacing}
-合肥工业大学RoboCup实验室主要使用C++/Python进行机器人仿真模拟的相关开发。
+  HCI 超融合产品线，围绕Linux内核、QEMU等虚拟化组件进行相关功能开发、问题定位、性能优化
 \begin{itemize}
-  \item 维护RoboCup 3D仿真开发环境的一键安装脚本。
-  \item 在C++环境使用CMA-ES算法对智能体行为进行优化。
+  \item NVMe-oF 与 SangforFS 文件系统的适配预研，在NVMe驱动中新增 NVMe Fused Command 支持
+  \item 为 SPDK bdev 增加 I/O 重试功能，满足业务设计需求
+  \item QEMU、Linux内核、用户态程序的问题定位与一般性能优化调优
+  \item CI/CD 维护，共享的Neovim配置维护，开发环境部署脚本维护等。其他的一些Glue Work
 \end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{GLEC2}}{2021年6月 -- 2021年7月}
-\role{个人项目，计算机体系结构的课程设计}{}
-\begin{onehalfspacing}
-一个五级流水线的RV32I的CPU核心设计，支持通过Bypass和Stall解决Data Hazard。实现了非特权的几乎全部指令，GCC编译出的机器码可以直接在CPU上运行。
-\begin{itemize}
-  \item 经典五级流水线设计
-  \item 完整的RV32I非特权级指令集
-  \item 可配置，通过改变参数可以配置CPU核心的参数。
-  \item 使用SpinalHDL(一个基于Scala的DSL)写成，敏捷开发实践。
-\end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{ZGMSOS}}{2021年6月 -- 至今}
-\role{竞赛项目}{}
-\begin{onehalfspacing}
-一个XV6风格的玩具内核实现，是系统能力培养大赛操作系统内核赛的初赛参赛作品。项目仍在开发中。
-\begin{itemize}
-  \item 支持多进程 / 上下文切换
-  \item 可以加载ELF文件，运行用户程序
-  \item 相比于XV6，有着更小细粒度的内存管理
-  \item 一个只读的FAT32文件系统
-  \item 一个简单的虚拟文件系统
-  \item 支持一些系统调用
-\end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{其他项目}}{}
-\role{个人项目,个人实用工具}{}
-\begin{onehalfspacing}
-下面是我的一些个人小项目。
-\begin{itemize}
-  \item GLEC: 一个单周期的RV32I指令集CPU核心实现
-  \item Robocup3dInstaller: RoboCup3D仿真开发环境安装脚本
-  \item gb\_onenotehelper: 一个增强触控笔上按键功能的AHK脚本，适用于单按键笔Windows设备
-  \item subw2r: 一个命令行V2ray订阅小工具，输入定订阅链接，生成config.json配置文件。
-\end{itemize}
-\end{onehalfspacing}
-
-\begin{onehalfspacing}
-\textbf{上面提到的主要项目都已经Pin到我的Github个人页面了}
 \end{onehalfspacing}
 
 % Reference Test
@@ -87,27 +47,32 @@
 \section{\faCogs\ 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C/C++, Python > Bash, Java, Rust, Scala
-  \item 平台: Linux
-  \item 开发: Linux环境编程，裸机环境编程
-  \item 其他: 对Linux命令行有一定掌握，因为日用系统是Archlinux。熟练使用Vim。
-
+  \item 编程语言：C/C++，Bash，Python
+  \item 平台相关：熟悉 Linux 用户态相关内容，了解发行版构建。熟悉systemd。非常熟悉Arch Linux发行版，了解Red Hat系发行版
+  \item 硬件相关：了解 X86\underline\ 64体系结构; 了解PCIe体系结构，部分了解NVMe协议
+  \item 网络相关：掌握一般的TCP/IP网络知识; 熟悉 RoCEv2 的网络配置与交换机配置，熟读相关经典论文
+  \item 虚拟化：了解内存虚拟化实现，熟悉virtio协议与VFIO；了解一些PV特性。例如KVM的PV特性与Hyper-V Enlightenments
+  \item 性能优化：了解Linux下相关性能分析和优化的方法，熟悉x86\underline\ 64下在微架构层面的性能分析与性能优化，TMA性能分析方法
+  \item 问题定位: 能够在Linux平台下使用 bpftrace gdb crash drgn 等工具完成从用户态到内核的问题定位、虚拟化场景下Guest与Host之间的问题定位处理。了解KASAN，Kfence，pstore等调试手段
+  \item Linux内核相关：了解内存在伙伴系统中的分配释放流程与内存回收。
+  \item 其他: 适应Linux命令行环境。
 \end{itemize}
 
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{二等奖}, 2020 中国大学生数学建模大赛本科组}{2020 年11 月}
-\datedline{\textit{一等奖}, 2020 安徽省大数据与人工智能应用竞赛本科组}{2020 年 10月}
-\datedline{\textit{一等奖}, 2020 安徽省机器人大赛，RoboCup仿真3D比赛}{2020 年 10月}
-\datedline{\textit{H奖}, 2020美国大学生数学建模竞赛}{2020年4月}
-\datedline{\textit{一等奖}, 合肥工业大学2018-2019学年奖学金}{2019年9月}
+\datedline{深信服科技股份有限公司，2022年度优秀新人}{2023 年2 月}
+\datedline{深信服科技股份有限攻宠，2023年上半年优秀员工}{2023 年9 月}
 
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
+  \item 英语水平 CET6 528 - 能够熟练阅读、撰写英文文档。擅长阅读各类Spec文档
+  \item Linux桌面环境用户，Arch Linux用户。Neovim用户
+  \item 会定期关注lwn.net和每年的LPC与CLK，也会关注计算机系统会议（例如OSDI ATC FAST）最新的论文, 周末时间会阅读一些论文
+  \item 个人爱好：游戏，嵌入式和FPGA、偶尔会调试开发板硬件驱动和修改DeviceTree
   \item GitHub: https://github.com/d0ot
-  \item 语言: 英语 - 中等(CET6 - 528, CET4 - 561)
+
 \end{itemize}
 
 %% Reference
