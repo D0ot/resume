@@ -1,3 +1,5 @@
+# For Arch User:
+# sudo pacman -S texlive-basic texlive-latex texlive-latexextra texlive-plaingeneric texlive-xetex texlive-luatex texlive-fontsrecommended texlive-langcjk texlive-langchinese
 SRC = $(wildcard *.tex)
 
 PDFS = $(SRC:.tex=.pdf)
